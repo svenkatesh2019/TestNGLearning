@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parametrs Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="annotations Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="env" value="qa"/>
+    <classes>
+      <class name="parameterization.ReadParametersFromXML">
+        <methods>
+          <include name="getBrowserName"/>
+        </methods>
+      </class> <!-- parameterization.ReadParametersFromXML -->
+    </classes>
+  </test> <!-- annotations Test(failed) -->
+</suite> <!-- Failed suite [Parametrs Suite] -->

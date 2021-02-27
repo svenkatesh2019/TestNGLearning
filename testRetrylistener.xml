@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="functional Suite">
+	<!-- <groups> <run> <include name="bvt"></include> </run> </groups> -->
+	  
+	<listeners>
+		<listener class-name="customListener.RetryListner"></listener>
+		
+	</listeners>
+	
+	<test name="retry Test">
+		<classes>
+			<class name="customListener.TestRetryListener" />
+
+		</classes>
+		
+	</test>
+	
+	
+	
+</suite> <!-- Suite -->

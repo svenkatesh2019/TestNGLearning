@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parametrs Suite" parallel="tests">
+
+	<test name="firefox Test1">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="env" value="qa"></parameter>
+		<classes>
+			<class name="parallelTest.TestParallelExec" />
+
+		</classes>
+
+
+	</test>
+	<test name="firefox test 2">
+	<parameter name="browser" value="firefox"></parameter>
+		<parameter name="env" value="uat"></parameter>
+		<classes>
+			<class name="parallelTest.TestParallelExec" />
+
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
